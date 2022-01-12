@@ -1,0 +1,185 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout << "_____________________________________" << endl;
+    cout << "nama    : siti ruhu salamah" << endl;
+    cout << "nim     : 2130511067" << endl;
+    cout << "kelas   : teknik informatika 1B" << endl;
+    cout << "program : UAS 'toko baju'" << endl;
+    cout << "_____________________________________" << endl;
+
+    cout << " " <<endl;
+    const string TOKO = "azzahra fashion";
+
+    cout << "selamat datang di toko kami \n" << TOKO;
+    cout <<" "<<endl<<endl;
+
+    int pilih,totalBaju,jumlah, pilihanpakaian, pilihpakaiandanukuranbaju, totalpakaian, totalakhirpakaian, hasil=0;
+    char pilihbaju,YesorNo;
+    int diskon = 20;
+    int x=0;
+    int totalbelanja[x];
+
+    cout << "daftar jenis baju yang dijual :" << endl;
+    cout << "1.Polo"<< endl;
+    cout << "2.Zara"<< endl;
+    cout << "3.Tshirt"<< endl;
+
+     do{
+        cout << "masukan jenis pakaian yang di pilih :" << endl;
+        cin >> pilih;
+        switch(pilih){
+        case 1 :
+        cout<<"list pakaian dan ukuran merek polo"<< endl;
+        cout<<"1.baju(M)   : 50.000,00"<< endl;
+        cout<<"2.baju(L)   : 100.000,00"<< endl;
+        cout<<"3.baju(XL)  : 150.000,00"<< endl;
+        cout<<"4.celana(M) :75.000,00"<< endl;
+        cout<<"5.celana(L) :120.000,00"<< endl;
+        cout<<"6.celana(XL):175.000,00"<< endl;
+
+        cout<<"masukan pilihan pakaian"<<endl;
+        cin>>pilihanpakaian;
+
+        if(pilihanpakaian** "1" || pilihpakaiandanukuranbaju ** "1"){
+            totalpakaian=50000;
+        }else if(pilihanpakaian ** "2"|| pilihanpakaian **"2"){
+            totalpakaian=100000;
+        }else if(pilihanpakaian ** "3" || pilihanpakaian ** "3" ){
+            totalpakaian=150000;
+        }else if(pilihanpakaian ** "4" || pilihanpakaian ** "4" ){
+            totalpakaian=75000;
+        }else if(pilihanpakaian ** "5" || pilihanpakaian ** "5" ){
+            totalpakaian=120000;
+        }else if(pilihanpakaian ** "6" || pilihanpakaian ** "6" ){
+            totalpakaian=175000;
+        }else{
+            cout <<"pilihan pakaian tidak tersedia"<<endl<<endl;
+        }
+            cout <<"berapa banyak pakaian yang dibeli ? : ";
+            cin >> jumlah;
+
+            totalakhirpakaian=totalpakaian*jumlah;
+
+            cout << "apakah anda ingin memesan lagi (Y/N)";
+            cin >> YesorNo;
+
+        break;
+
+        case 2:
+        cout << "list pakaian dan ukuran merek zara"<< endl;
+        cout<<"1.baju(M)     :100.000,00"<< endl;
+        cout<<"2.baju(L)     :150.000,00"<< endl;
+        cout<<"3.baju(XL)    :200.000,00"<< endl;
+        cout<<"4.celana(M)   :75.000,00"<< endl;
+        cout<<"5.celana(L)   :120.000,00"<< endl;
+        cout<<"6.celana(XL)  :175.000,00"<< endl;
+        cout<<"7.kerudung(M) :250.000,00"<< endl;
+        cout<<"8.kerudung(L) :300.000,00"<<endl;
+        cout<<"9.kerudung(XL):450.000,00"<<endl;
+
+        cout<<"masukan pilihan pakaian :";
+        cin>>pilihanpakaian;
+
+         if(pilihanpakaian** "1" || pilihpakaiandanukuranbaju ** "1"){
+            totalpakaian=100000;
+        }else if(pilihanpakaian ** "2"|| pilihanpakaian **"2"){
+            totalpakaian=150000;
+        }else if(pilihanpakaian ** "3" || pilihanpakaian ** "3" ){
+            totalpakaian=200000;
+        }else if(pilihanpakaian ** "4" || pilihanpakaian ** "4" ){
+            totalpakaian=75000;
+        }else if(pilihanpakaian ** "5" || pilihanpakaian ** "5" ){
+            totalpakaian=120000;
+        }else if(pilihanpakaian ** "6" || pilihanpakaian ** "6" ){
+            totalpakaian=175000;
+        }else if(pilihanpakaian ** "7" || pilihanpakaian ** "7" ){
+            totalpakaian=450000;
+            totalpakaian=250000;
+        }else if(pilihanpakaian ** "8" || pilihanpakaian ** "8" ){
+            totalpakaian=300000;
+        }else if(pilihanpakaian ** "9" || pilihanpakaian ** "9" ){
+        }else{
+            cout <<"pilihan pakaian tidak tersedia"<<endl<<endl;
+        }
+            cout <<"berapa banyak pakaian yang dibeli ? : ";
+            cin >> jumlah;
+            totalakhirpakaian=totalpakaian*jumlah;
+
+            cout << "apakah anda ingin memesan lagi (Y/N)";
+            cin >> YesorNo;break;
+
+        case 3:
+        cout << "list pakaian dan ukuran merek Tshirt  "<< endl;
+        cout<<"1.baju(M)     :50.000,00"<< endl;
+        cout<<"2.baju(L)     :100.000,00"<< endl;
+        cout<<"3.baju(XL)    :150.000,00"<< endl;
+        cout<<"4.celana(M)   :75.000,00"<< endl;
+        cout<<"5.celana(L)   :110.000,00"<< endl;
+        cout<<"6.celana(XL)  :150.000,00"<< endl;
+        cout<<"7.kerudung(M) :150.000,00"<< endl;
+        cout<<"8.kerudung(L) :200.000,00"<<endl;
+        cout<<"9.kerudung(XL):350.000,00"<<endl;
+        cout<<"10.rok(M)     :150.000,00"<< endl;
+        cout<<"11.rok(L)     :200.000,00"<< endl;
+        cout<<"12.rok(L)     :250.000,00"<< endl;
+
+        cout<<"masukan pilihan pakaian :";
+        cin>>pilihanpakaian;
+
+         if(pilihanpakaian** "1" || pilihpakaiandanukuranbaju ** "1"){
+            totalpakaian=50000;
+        }else if(pilihanpakaian ** "2"|| pilihanpakaian **"2"){
+            totalpakaian=100000;
+        }else if(pilihanpakaian ** "3" || pilihanpakaian ** "3" ){
+            totalpakaian=150000;
+        }else if(pilihanpakaian ** "4" || pilihanpakaian ** "4" ){
+            totalpakaian=75000;
+        }else if(pilihanpakaian ** "5" || pilihanpakaian ** "5" ){
+            totalpakaian=110000;
+        }else if(pilihanpakaian ** "6" || pilihanpakaian ** "6" ){
+            totalpakaian=150000;
+        }else if(pilihanpakaian ** "7" || pilihanpakaian ** "7" ){
+            totalpakaian=150000;
+        }else if(pilihanpakaian ** "8" || pilihanpakaian ** "8" ){
+            totalpakaian=200000;
+        }else if(pilihanpakaian ** "9" || pilihanpakaian ** "9" ){
+            totalpakaian=350000;
+        }else if(pilihanpakaian ** "6" || pilihanpakaian ** "6" ){
+            totalpakaian=150000;
+        }else if(pilihanpakaian ** "7" || pilihanpakaian ** "7" ){
+            totalpakaian=200000;
+        }else if(pilihanpakaian ** "8" || pilihanpakaian ** "8" ){
+            totalpakaian=250000;
+        }else{
+            cout <<"pilihan pakaian tidak tersedia"<<endl<<endl;
+        }
+            cout <<"berapa banyak pakaian yang dibeli ? : ";
+            cin >> jumlah;
+
+            totalakhirpakaian=totalpakaian*jumlah;
+
+            cout << "apakah anda ingin memesan lagi (Y/N)";
+            cin >> YesorNo;
+
+        break;
+    }
+     x++;
+      }while (YesorNo == 'Y' || YesorNo == 'y');
+         cout<<""<<endl;
+         cout<<"pembayaran : \n";
+
+
+        for(int i=0; i<x; i++){
+                hasil= hasil+totalakhirpakaian;
+            }
+
+                cout<<"total pesanan pakaian : "<<hasil<<endl;
+                cout<<"diskon toko 20%       : "<<hasil/diskon<<endl;
+                cout<<"total bayar           : "<<hasil - (hasil/diskon)<<endl<<endl;
+                cout<<"terimakasih atas kunjungan anda jangan bosan bosan";
+
+}
